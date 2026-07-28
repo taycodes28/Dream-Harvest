@@ -3,6 +3,7 @@
 [ext_resource type="Theme" uid="uid://ck81jenb7ng6i" path="res://scenes/ui/game_ui_theme.tres" id="1_fnqby"]
 [ext_resource type="Texture2D" uid="uid://wvnlorubxjbn" path="res://assets/ui/basic_ui_sprites.png" id="2_25t5k"]
 [ext_resource type="Script" uid="uid://d0a23w25yg7lx" path="res://scenes/ui/day_and_night_panel.gd" id="2_xc6ft"]
+[ext_resource type="ButtonGroup" uid="uid://cjm64ukgpgh6r" path="res://scenes/ui/time_panel_group.tres" id="3_k3f4j"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xc6ft"]
 atlas = ExtResource("2_25t5k")
@@ -65,6 +66,7 @@ offset_right = 26.0
 offset_bottom = 18.0
 theme_type_variation = &"DayAndNightButton"
 toggle_mode = true
+button_group = ExtResource("3_k3f4j")
 
 [node name="TextureRect" type="TextureRect" parent="Control/NormalSpeedButton" unique_id=223649522]
 layout_mode = 1
@@ -88,6 +90,7 @@ offset_right = 53.0
 offset_bottom = 18.0
 theme_type_variation = &"DayAndNightButton"
 toggle_mode = true
+button_group = ExtResource("3_k3f4j")
 
 [node name="TextureRect" type="TextureRect" parent="Control/FastSpeedButton" unique_id=612951528]
 layout_mode = 1
@@ -126,6 +129,7 @@ offset_right = 80.0
 offset_bottom = 18.0
 theme_type_variation = &"DayAndNightButton"
 toggle_mode = true
+button_group = ExtResource("3_k3f4j")
 
 [node name="TextureRect" type="TextureRect" parent="Control/CheetahSpeedButton" unique_id=1999126029]
 layout_mode = 1

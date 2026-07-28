@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://cmfqobaqx4oou" path="res://scenes/ui/tools_panel.gd" id="2_0jxvs"]
 [ext_resource type="Texture2D" uid="uid://btnps6bf6hbwl" path="res://assets/game/objects/basic_tools_and_materials.png" id="2_xkgdf"]
 [ext_resource type="Texture2D" uid="uid://dqwyvvie8pgl4" path="res://assets/game/objects/basic_plants.png" id="3_a7ivs"]
+[ext_resource type="ButtonGroup" uid="uid://c6w20tr6qds41" path="res://scenes/ui/tools_panel_group.tres" id="3_gbtgy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a7ivs"]
 atlas = ExtResource("2_xkgdf")
@@ -56,6 +57,7 @@ custom_minimum_size = Vector2(26, 26)
 layout_mode = 2
 theme_type_variation = &"ToolButton"
 toggle_mode = true
+button_group = ExtResource("3_gbtgy")
 icon = SubResource("AtlasTexture_a7ivs")
 icon_alignment = 1
 
@@ -64,6 +66,7 @@ custom_minimum_size = Vector2(26, 26)
 layout_mode = 2
 theme_type_variation = &"ToolButton"
 toggle_mode = true
+button_group = ExtResource("3_gbtgy")
 icon = SubResource("AtlasTexture_gbtgy")
 icon_alignment = 1
 
@@ -72,6 +75,7 @@ custom_minimum_size = Vector2(26, 26)
 layout_mode = 2
 theme_type_variation = &"ToolButton"
 toggle_mode = true
+button_group = ExtResource("3_gbtgy")
 icon = SubResource("AtlasTexture_a6726")
 icon_alignment = 1
 
@@ -80,6 +84,7 @@ custom_minimum_size = Vector2(26, 26)
 layout_mode = 2
 theme_type_variation = &"ToolButton"
 toggle_mode = true
+button_group = ExtResource("3_gbtgy")
 icon = SubResource("AtlasTexture_3neg6")
 icon_alignment = 1
 
@@ -88,6 +93,7 @@ custom_minimum_size = Vector2(26, 26)
 layout_mode = 2
 theme_type_variation = &"ToolButton"
 toggle_mode = true
+button_group = ExtResource("3_gbtgy")
 icon = SubResource("AtlasTexture_0jxvs")
 icon_alignment = 1
 
