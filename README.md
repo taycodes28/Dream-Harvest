@@ -1,1 +1,1 @@
-# Dream-Harvest
+This is my game called Dream Harvest. It is a 2d farming game, where you can cut down trees, grow food, and feed animals. I followed a tutorial called "How to Build a Complete 2D Farming Game an 8-Hour Tutorial Series" by Rapid Vectors. It took me way longer than 8 hours as I had to debug a lot and also add my own features when designing. The part I enjoyed the most was designing the layouts of the houses and scenes. I learned a lot about the different functions of Godot and hope to use them in my next project.  I made this project for #HorizonsPolaris.
