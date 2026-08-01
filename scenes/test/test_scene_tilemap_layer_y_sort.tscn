@@ -31,7 +31,7 @@ tile_set = ExtResource("1_ctmx0")
 
 [node name="Objects" type="TileMapLayer" parent="GameTileMap" unique_id=1986714405]
 y_sort_enabled = true
-tile_map_data = PackedByteArray("AAAHAAkABQAAAAAABgAKAAkABQAAAAAABQAJAA0ABQAAAAAABAA=")
+tile_map_data = PackedByteArray("AAAHAAkABQAAAAAABgAJAA0ABQAAAAAABAAKAAkABQAAAAAABQA=")
 tile_set = ExtResource("1_ctmx0")
 
 [node name="Crops" type="Node2D" parent="." unique_id=1374873032]

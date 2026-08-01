@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://cawg42tf3b06p"]
+
+[ext_resource type="Theme" uid="uid://ck81jenb7ng6i" path="res://scenes/ui/game_ui_theme.tres" id="1_5slcd"]
+[ext_resource type="PackedScene" uid="uid://eday1n6na0uc" path="res://scenes/ui/game_menu_screen_background.tscn" id="1_arotu"]
+[ext_resource type="Script" uid="uid://keq8i4u3dc5" path="res://scenes/ui/game_menu_screen.gd" id="1_l5nq4"]
+
+[node name="GameMenuScreen" type="CanvasLayer" unique_id=645471736]
+script = ExtResource("1_l5nq4")
+
+[node name="GameMenuScreenBackground" parent="." unique_id=285389788 instance=ExtResource("1_arotu")]
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1093738015]
+offset_right = 641.0
+offset_bottom = 365.0
+theme = ExtResource("1_5slcd")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer" unique_id=2141737850]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer" unique_id=278278265]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.61436313, 0.43147033, 0.31163204, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 3
+theme_override_font_sizes/font_size = 54
+text = "DREAM HARVEST"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1687972352]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="StartGameButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=200376361]
+custom_minimum_size = Vector2(100, 29)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_type_variation = &"GameMenuButton"
+text = "START"
+
+[node name="SaveGameButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=761332949]
+custom_minimum_size = Vector2(100, 29)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_type_variation = &"GameMenuButton"
+text = "SAVE"
+
+[node name="ExitGameButton2" type="Button" parent="MarginContainer/VBoxContainer" unique_id=384917775]
+custom_minimum_size = Vector2(100, 29)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_type_variation = &"GameMenuButton"
+text = "EXIT"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/StartGameButton" to="." method="_on_start_game_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/SaveGameButton" to="." method="_on_save_game_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ExitGameButton2" to="." method="_on_exit_game_button_2_pressed"]
